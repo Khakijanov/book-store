@@ -1,0 +1,24 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "Yulduzli Tunlar",
+      "auth": "Pirimqul Qodirov",
+      "photo": "https://kitobxon.com/img_knigi/1453.jpg"
+    },
+    {
+      "id": "6701",
+      "title": "Mukoshafatul Qulub",
+      "auth": "G'azoliy",
+      "photo": "https://olcha.uz/image/700x700/products/2023-01-14/mukoshafatul-ulub-190100-0.jpg",
+      "kategoriya": "diniy"
+    },
+    {
+      "id": "6efe",
+      "title": "O'tgan Kunlar ",
+      "auth": "Abdulla Qodriy",
+      "photo": "https://upload.wikimedia.org/wikipedia/uz/8/81/O%CA%BBtgan_kunlar.jpg",
+      "kategoriya": "romantik"
+    }
+  ]
+}
