@@ -1,25 +1,28 @@
 "use client";
+import { useEffect, useState } from "react"; // Bir marta import qilish kifoya
 
-import next from "next";
+export default function Books() {
+  // Komponent nomi "Books" qilib o'zgartirilgan
+  const [books, setBooks] = useState([]);
 
-const getData = async () => {
-  const request = await fetch("http://localhost:4000/books", {
-    next: {
-      revalidate: 0,
-    },
-  });
+  // Kitoblarni olish uchun fetch qilish
+  useEffect(() => {
+    const fetchBooks = async () => {
+      try {
+        const res = await fetch("http://localhost:4000/books");
+        const data = await res.json();
+        setBooks(data);
+      } catch (err) {
+        console.error("Ma'lumotlarni olishda xatolik yuz berdi:", err);
+      }
+    };
 
-  const data = await request.json();
-
-  return data; // Obyekt emas, massivni qaytarish kerak
-};
-
-async function Home() {
-  const books = await getData(); // 'data' o'rniga 'books' deb nomlash osonroq
+    fetchBooks();
+  }, []); // Bu yerda [] bilan useEffect ichida fetchBooks faqat bir marta ishlaydi
 
   return (
     <div className="container">
-      <div className="mt-20 container flex flex-wrap justify-between items-center ">
+      <div className="mt-20 container flex flex-wrap justify-between items-center">
         {books.map((book) => (
           <div
             key={book.id}
@@ -41,5 +44,3 @@ async function Home() {
     </div>
   );
 }
-
-export default Home;
