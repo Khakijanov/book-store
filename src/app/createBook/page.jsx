@@ -2,8 +2,9 @@
 import toast from "react-hot-toast";
 import FormInput from "../components/FormInput";
 import { useState } from "react";
-
+import { useRouter } from "next/navigation";
 function CreateBook() {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     title: "",
     auth: "",
@@ -50,6 +51,7 @@ function CreateBook() {
         price: "",
       });
       setErrors({});
+      router.push("/");
       toast.success("You added a new book");
     });
   };
