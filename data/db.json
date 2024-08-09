@@ -4,21 +4,46 @@
       "id": "1",
       "title": "Yulduzli Tunlar",
       "auth": "Pirimqul Qodirov",
-      "photo": "https://kitobxon.com/img_knigi/1453.jpg"
-    },
-    {
-      "id": "6701",
-      "title": "Mukoshafatul Qulub",
-      "auth": "G'azoliy",
-      "photo": "https://olcha.uz/image/700x700/products/2023-01-14/mukoshafatul-ulub-190100-0.jpg",
-      "kategoriya": "diniy"
+      "imgURL": "https://kitobxon.com/img_knigi/1453.jpg"
     },
     {
       "id": "6efe",
       "title": "O'tgan Kunlar ",
       "auth": "Abdulla Qodriy",
-      "photo": "https://upload.wikimedia.org/wikipedia/uz/8/81/O%CA%BBtgan_kunlar.jpg",
+      "imgURL": "https://upload.wikimedia.org/wikipedia/uz/8/81/O%CA%BBtgan_kunlar.jpg",
       "kategoriya": "romantik"
+    },
+    {
+      "id": "815e",
+      "title": "kecha va kunduz",
+      "auth": "Cho'lpon",
+      "imgURL": "https://lh4.googleusercontent.com/proxy/tS562a2gOdp-z6w4Nz3gvFfbMmgkpi5ikS1wT5Ojo7FAM4YkDNT_PZIJMSlOj0rTRFHPw_IhNGm4wVzAT8Xr_pzxR0smo3CtApLeW_rSB1JNiOROvc1eNihMBkYgZPCbU6-WOr7iuCGhoIcu4dzzwByM4w3e2eXd4uonNrLk",
+      "kategoriya": "romantik"
+    },
+    {
+      "id": "e8ae",
+      "title": "Mukoshafatul Qulub",
+      "auth": "G'azzolliy",
+      "imgURL": "https://kitobxon.com/img_knigi/3102.jpg",
+      "kategoriya": "Diniy"
+    },
+    {
+      "id": "6756",
+      "title": "Sariq Devni minib ",
+      "auth": "Xudoyberdi.T",
+      "imgURL": "https://assets.asaxiy.uz/product/items/desktop/5e15bc06f3263.jpg.webp",
+      "kategoriya": "Komediya",
+      "description": "O’zbekiston xalq yozuvchisi, bolalarning sevimli adibi Xudoyberdi To’xtaboyevning asalari ‎nafaqat respublikamizda, balki chetellarda ham ma’lum va mashhurdir. Qo’lingizdagi “Sariq ‎devni minib” sarguzasht romani bolalar hayotidan olib yozilgan bo’lib, ularning sevimli ‎kitoblaridandir. Bu asarda orzu-havasga eltadigan chinakam yo’l halol mehnat, yaxshi xulq-odob ‎va qunt bilan o’qishda ekanligi ta’kidlanadi.‎",
+      "price": "25.000"
+    },
+    {
+      "id": "e199",
+      "title": "Izlash",
+      "auth": "Mehmet",
+      "imgURL": "https://assets.asaxiy.uz/product/items/desktop/812b4ba287f5ee0bc9d43bbf5bbe87fb2022061211363491130PdYM0j11lx.jpg.webp",
+      "kategoriya": "Diniy",
+      "description": "Hayotining bahorida so‘ligan navnihol...  Maishiy zo‘ravonlik, qotillik, ko‘cha hayoti, giyohvandlik, yetimlik, afsus-nadomat va ruhiy azoblarni boshdan kechirgan yoshgina yigitcha.  Bu yoshida buncha yukni ko‘tarish unga og‘irlik qildi.",
+      "price": "65.000"
     }
   ]
 }

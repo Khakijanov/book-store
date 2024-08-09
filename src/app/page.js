@@ -26,16 +26,24 @@ export default function Books() {
         {books.map((book) => (
           <div
             key={book.id}
-            className="h-[300px] card card-compact border-2 bg-base-100 w-[22%] shadow-xl"
+            className="h-[300px] mb-5 card card-compact border-2 bg-base-100 w-[22%] shadow-xl"
           >
-            <figure>
-              <img width={100} src={book.photo} alt={book.title} />
+            <figure className=" mt-2 h-[150px] overflow-hidden">
+              <img
+                className="h-full w-[full] object-cover "
+                src={book.imgURL}
+                alt={book.title}
+              />
             </figure>
-            <div className="card-body">
-              <h2 className="card-title">{book.title}</h2>
-              <p>{book.author}</p>
-              <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
+            <div className="card-body flex flex-col justify-between h-[180px]">
+              <h2 className="card-title truncate">{book.title}</h2>
+              <span className="text-[18px] font-semibold text-gray-400">
+                {book.auth}
+              </span>
+              <span>{book.price} sum</span>
+              <p className="text-sm">{book.author}</p>
+              <div className="w-full card-actions justify-end">
+                <button className="w-full btn btn-primary">Learn More</button>
               </div>
             </div>
           </div>

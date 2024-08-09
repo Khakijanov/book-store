@@ -1,6 +1,15 @@
+"use client";
 import React from "react";
 
-function FormInput({ label, name, placeholder, type }) {
+function FormInput({
+  label,
+  name,
+  placeholder,
+  type = "text",
+  value,
+  onChange,
+  error,
+}) {
   return (
     <label className="form-control w-full ">
       <div className="label">
@@ -10,8 +19,13 @@ function FormInput({ label, name, placeholder, type }) {
         name={name}
         type={type}
         placeholder={placeholder}
-        className="input input-bordered w-full "
+        value={value}
+        onChange={onChange}
+        className={`input input-bordered w-full ${
+          error ? "border-red-500" : ""
+        }`}
       />
+      {error && <p className="text-red-500 mt-1">{error}</p>}
     </label>
   );
 }
